@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+da42f28177659988d66c6b2625f190ba CMakeFiles/usbip_gui_autogen
+da42f28177659988d66c6b2625f190ba CMakeFiles/usbip_gui_autogen_timestamp_deps
+119fdc8d3be00e247a956745de950586 usbip_gui_autogen/timestamp
