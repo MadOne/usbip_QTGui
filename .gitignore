@@ -1,5 +1,8 @@
 build/
-CMakeFiles/
-usbip_gui_autogen/
-.cache/
-.vscode/
+/CMakeFiles/
+/usbip_gui_autogen/
+
+/CMakeCache.txt
+/CMakeCache.txt
+/usbip_gui
+

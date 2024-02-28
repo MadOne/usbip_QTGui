@@ -51,6 +51,8 @@ void serverManager::saveSettings()
     settings.endArray();
 }
 
+
+
 void serverManager::loadSettings()
 {
     qDebug() << "loading settings";
