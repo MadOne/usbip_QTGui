@@ -73,33 +73,9 @@ build CMakeFiles/usbip_gui.dir/mainwindow.cpp.o: CXX_COMPILER__usbip_gui_unscann
   OBJECT_DIR = CMakeFiles/usbip_gui.dir
   OBJECT_FILE_DIR = CMakeFiles/usbip_gui.dir
 
-build CMakeFiles/usbip_gui.dir/parseremote.cpp.o: CXX_COMPILER__usbip_gui_unscanned_Debug /home/madone/Dokumente/coding/usbip_gui/usbip_gui/parseremote.cpp || cmake_object_order_depends_target_usbip_gui
+build CMakeFiles/usbip_gui.dir/servermanager.cpp.o: CXX_COMPILER__usbip_gui_unscanned_Debug /home/madone/Dokumente/coding/usbip_gui/usbip_gui/servermanager.cpp || cmake_object_order_depends_target_usbip_gui
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/usbip_gui.dir/parseremote.cpp.o.d
-  FLAGS = -g -std=gnu++17 -fPIC
-  INCLUDES = -I/home/madone/Dokumente/coding/usbip_gui/usbip_gui/build/usbip_gui_autogen/include -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++
-  OBJECT_DIR = CMakeFiles/usbip_gui.dir
-  OBJECT_FILE_DIR = CMakeFiles/usbip_gui.dir
-
-build CMakeFiles/usbip_gui.dir/usbdevice.cpp.o: CXX_COMPILER__usbip_gui_unscanned_Debug /home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbdevice.cpp || cmake_object_order_depends_target_usbip_gui
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/usbip_gui.dir/usbdevice.cpp.o.d
-  FLAGS = -g -std=gnu++17 -fPIC
-  INCLUDES = -I/home/madone/Dokumente/coding/usbip_gui/usbip_gui/build/usbip_gui_autogen/include -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++
-  OBJECT_DIR = CMakeFiles/usbip_gui.dir
-  OBJECT_FILE_DIR = CMakeFiles/usbip_gui.dir
-
-build CMakeFiles/usbip_gui.dir/usbdevicelocal.cpp.o: CXX_COMPILER__usbip_gui_unscanned_Debug /home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbdevicelocal.cpp || cmake_object_order_depends_target_usbip_gui
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/usbip_gui.dir/usbdevicelocal.cpp.o.d
-  FLAGS = -g -std=gnu++17 -fPIC
-  INCLUDES = -I/home/madone/Dokumente/coding/usbip_gui/usbip_gui/build/usbip_gui_autogen/include -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++
-  OBJECT_DIR = CMakeFiles/usbip_gui.dir
-  OBJECT_FILE_DIR = CMakeFiles/usbip_gui.dir
-
-build CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.o: CXX_COMPILER__usbip_gui_unscanned_Debug /home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbdeviceremote.cpp || cmake_object_order_depends_target_usbip_gui
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.o.d
+  DEP_FILE = CMakeFiles/usbip_gui.dir/servermanager.cpp.o.d
   FLAGS = -g -std=gnu++17 -fPIC
   INCLUDES = -I/home/madone/Dokumente/coding/usbip_gui/usbip_gui/build/usbip_gui_autogen/include -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++
   OBJECT_DIR = CMakeFiles/usbip_gui.dir
@@ -113,7 +89,7 @@ build CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.o: CXX_COMPILER__usbip_gui_un
 #############################################
 # Link the executable usbip_gui
 
-build usbip_gui: CXX_EXECUTABLE_LINKER__usbip_gui_Debug CMakeFiles/usbip_gui.dir/usbip_gui_autogen/mocs_compilation.cpp.o CMakeFiles/usbip_gui.dir/main.cpp.o CMakeFiles/usbip_gui.dir/mainwindow.cpp.o CMakeFiles/usbip_gui.dir/parseremote.cpp.o CMakeFiles/usbip_gui.dir/usbdevice.cpp.o CMakeFiles/usbip_gui.dir/usbdevicelocal.cpp.o CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.o | /usr/lib/libQt5Widgets.so.5.15.12 /usr/lib/libQt5Gui.so.5.15.12 /usr/lib/libQt5Core.so.5.15.12 || usbip_gui_autogen usbip_gui_autogen_timestamp_deps
+build usbip_gui: CXX_EXECUTABLE_LINKER__usbip_gui_Debug CMakeFiles/usbip_gui.dir/usbip_gui_autogen/mocs_compilation.cpp.o CMakeFiles/usbip_gui.dir/main.cpp.o CMakeFiles/usbip_gui.dir/mainwindow.cpp.o CMakeFiles/usbip_gui.dir/servermanager.cpp.o | /usr/lib/libQt5Widgets.so.5.15.12 /usr/lib/libQt5Gui.so.5.15.12 /usr/lib/libQt5Core.so.5.15.12 || usbip_gui_autogen usbip_gui_autogen_timestamp_deps
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/libQt5Widgets.so.5.15.12  /usr/lib/libQt5Gui.so.5.15.12  /usr/lib/libQt5Core.so.5.15.12
   OBJECT_DIR = CMakeFiles/usbip_gui.dir
@@ -198,7 +174,7 @@ build usbip_gui_autogen_timestamp_deps: phony CMakeFiles/usbip_gui_autogen_times
 #############################################
 # Utility command for usbip_gui_autogen
 
-build usbip_gui_autogen: phony CMakeFiles/usbip_gui_autogen usbip_gui_autogen/include/ui_mainwindow.h usbip_gui_autogen/timestamp usbip_gui_autogen/mocs_compilation.cpp usbip_gui_autogen_timestamp_deps
+build usbip_gui_autogen: phony CMakeFiles/usbip_gui_autogen usbip_gui_autogen/include/ui_mainwindow.h usbip_gui_autogen/include/ui_servermanager.h usbip_gui_autogen/timestamp usbip_gui_autogen/mocs_compilation.cpp usbip_gui_autogen_timestamp_deps
 
 
 #############################################
@@ -214,13 +190,13 @@ build usbip_gui_autogen/timestamp usbip_gui_autogen/mocs_compilation.cpp | ${cma
 #############################################
 # Phony custom command for CMakeFiles/usbip_gui_autogen_timestamp_deps
 
-build CMakeFiles/usbip_gui_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/usbip_gui_autogen_timestamp_deps: phony /usr/bin/uic /usr/lib/libQt5Widgets.so.5.15.12 /usr/bin/moc
+build CMakeFiles/usbip_gui_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/usbip_gui_autogen_timestamp_deps: phony /usr/lib/libQt5Widgets.so.5.15.12 /usr/bin/uic /usr/bin/moc
 
 
 #############################################
 # Phony custom command for CMakeFiles/usbip_gui_autogen
 
-build CMakeFiles/usbip_gui_autogen usbip_gui_autogen/include/ui_mainwindow.h | ${cmake_ninja_workdir}CMakeFiles/usbip_gui_autogen ${cmake_ninja_workdir}usbip_gui_autogen/include/ui_mainwindow.h: phony usbip_gui_autogen/timestamp || usbip_gui_autogen_timestamp_deps
+build CMakeFiles/usbip_gui_autogen usbip_gui_autogen/include/ui_mainwindow.h usbip_gui_autogen/include/ui_servermanager.h | ${cmake_ninja_workdir}CMakeFiles/usbip_gui_autogen ${cmake_ninja_workdir}usbip_gui_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}usbip_gui_autogen/include/ui_servermanager.h: phony usbip_gui_autogen/timestamp || usbip_gui_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

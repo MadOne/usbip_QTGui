@@ -33,5 +33,6 @@ private slots:
     void populateLocal(QStringList deviceList);
     void populateRemote(QStringList deviceList);
     void populateAttached(QStringList deviceList);
+    void on_actionServer_Manager_triggered();
 };
 #endif // MAINWINDOW_H

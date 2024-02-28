@@ -38,10 +38,12 @@ else()
     else()
         add_executable(usbip_gui
             ${PROJECT_SOURCES}
-            parseremote.h parseremote.cpp
-            usbdevice.h usbdevice.cpp
-            usbdevicelocal.h usbdevicelocal.cpp
-            usbdeviceremote.h usbdeviceremote.cpp
+
+
+
+
+            servermanager.h servermanager.cpp servermanager.ui
+
         )
     endif()
 endif()

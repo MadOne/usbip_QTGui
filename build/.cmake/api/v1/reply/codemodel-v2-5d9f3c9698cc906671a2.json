@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-7b5bcf160bd3369afc08.json",
+					"jsonFile" : "directory-.-Debug-251e22262e05b85d10e0.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "usbip_gui::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-usbip_gui-Debug-cd968fc26c8596077740.json",
+					"jsonFile" : "target-usbip_gui-Debug-e8e73164b8e21b73b16e.json",
 					"name" : "usbip_gui",
 					"projectIndex" : 0
 				},

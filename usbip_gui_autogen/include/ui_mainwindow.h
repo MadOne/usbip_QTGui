@@ -10,15 +10,16 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
+#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTableWidget>
+#include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -26,6 +27,7 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindow
 {
 public:
+    QAction *actionServer_Manager;
     QWidget *centralwidget;
     QPushButton *btnLocalRefresh;
     QPushButton *btnLocalBind;
@@ -41,14 +43,19 @@ public:
     QTableWidget *tvLocal;
     QTableWidget *tvRemote;
     QTableWidget *tvAttached;
-    QMenuBar *menubar;
     QStatusBar *statusbar;
+    QToolBar *toolBar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->resize(804, 828);
+        actionServer_Manager = new QAction(MainWindow);
+        actionServer_Manager->setObjectName(QString::fromUtf8("actionServer_Manager"));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8("img/server-network-outline.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        actionServer_Manager->setIcon(icon);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         btnLocalRefresh = new QPushButton(centralwidget);
@@ -128,13 +135,14 @@ public:
         tvAttached->setSelectionBehavior(QAbstractItemView::SelectRows);
         tvAttached->verticalHeader()->setVisible(false);
         MainWindow->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(MainWindow);
-        menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 804, 23));
-        MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
         MainWindow->setStatusBar(statusbar);
+        toolBar = new QToolBar(MainWindow);
+        toolBar->setObjectName(QString::fromUtf8("toolBar"));
+        MainWindow->addToolBar(Qt::TopToolBarArea, toolBar);
+
+        toolBar->addAction(actionServer_Manager);
 
         retranslateUi(MainWindow);
         QObject::connect(btnRemoteRefresh, SIGNAL(clicked()), MainWindow, SLOT(btnRemoteRefresh()));
@@ -151,6 +159,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        actionServer_Manager->setText(QCoreApplication::translate("MainWindow", "Server Manager", nullptr));
         btnLocalRefresh->setText(QCoreApplication::translate("MainWindow", "Refresh", nullptr));
         btnLocalBind->setText(QCoreApplication::translate("MainWindow", "Bind Device", nullptr));
         btnLocalUnbind->setText(QCoreApplication::translate("MainWindow", "Unbind Device", nullptr));
@@ -184,6 +193,7 @@ public:
         ___qtablewidgetitem9->setText(QCoreApplication::translate("MainWindow", "Manufactoror", nullptr));
         QTableWidgetItem *___qtablewidgetitem10 = tvAttached->horizontalHeaderItem(4);
         ___qtablewidgetitem10->setText(QCoreApplication::translate("MainWindow", "Description", nullptr));
+        toolBar->setWindowTitle(QCoreApplication::translate("MainWindow", "toolBar", nullptr));
     } // retranslateUi
 
 };

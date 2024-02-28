@@ -246,13 +246,17 @@ CMakeFiles/usbip_gui.dir/mainwindow.cpp.o: \
  /home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbip_gui_autogen/include/./ui_mainwindow.h \
  /usr/include/qt/QtCore/QVariant /usr/include/qt/QtCore/qvariant.h \
  /usr/include/qt/QtCore/qmap.h /usr/include/c++/13.2.1/variant \
+ /usr/include/qt/QtWidgets/QAction /usr/include/qt/QtWidgets/qaction.h \
+ /usr/include/qt/QtCore/qvariant.h \
+ /usr/include/qt/QtWidgets/qactiongroup.h \
+ /usr/include/qt/QtWidgets/qaction.h \
  /usr/include/qt/QtWidgets/QApplication \
  /usr/include/qt/QtWidgets/qapplication.h \
  /usr/include/qt/QtCore/qcoreapplication.h \
  /usr/include/qt/QtCore/qcoreevent.h /usr/include/qt/QtCore/qeventloop.h \
  /usr/include/qt/QtGui/qguiapplication.h \
  /usr/include/qt/QtGui/qinputmethod.h /usr/include/qt/QtCore/qlocale.h \
- /usr/include/qt/QtCore/qvariant.h /usr/include/qt/QtWidgets/QHeaderView \
+ /usr/include/qt/QtWidgets/QHeaderView \
  /usr/include/qt/QtWidgets/qheaderview.h \
  /usr/include/qt/QtWidgets/qabstractitemview.h \
  /usr/include/qt/QtWidgets/qabstractscrollarea.h \
@@ -273,10 +277,7 @@ CMakeFiles/usbip_gui.dir/mainwindow.cpp.o: \
  /usr/include/qt/QtWidgets/qlineedit.h \
  /usr/include/qt/QtGui/qtextcursor.h /usr/include/qt/QtGui/qtextformat.h \
  /usr/include/qt/QtGui/qpen.h /usr/include/qt/QtGui/qtextoption.h \
- /usr/include/qt/QtWidgets/QMainWindow /usr/include/qt/QtWidgets/QMenuBar \
- /usr/include/qt/QtWidgets/qmenubar.h /usr/include/qt/QtWidgets/qmenu.h \
- /usr/include/qt/QtWidgets/qaction.h \
- /usr/include/qt/QtWidgets/qactiongroup.h \
+ /usr/include/qt/QtWidgets/QMainWindow \
  /usr/include/qt/QtWidgets/QPushButton \
  /usr/include/qt/QtWidgets/qpushbutton.h \
  /usr/include/qt/QtWidgets/qabstractbutton.h \
@@ -284,9 +285,11 @@ CMakeFiles/usbip_gui.dir/mainwindow.cpp.o: \
  /usr/include/qt/QtWidgets/qstatusbar.h \
  /usr/include/qt/QtWidgets/QTableWidget \
  /usr/include/qt/QtWidgets/qtablewidget.h \
- /usr/include/qt/QtWidgets/qtableview.h /usr/include/qt/QtWidgets/QWidget \
- /usr/include/qt/QtWidgets/qwidget.h /usr/include/qt/QtCore/QDebug \
- /usr/include/qt/QtCore/qdebug.h /usr/include/qt/QtCore/qtextstream.h \
+ /usr/include/qt/QtWidgets/qtableview.h \
+ /usr/include/qt/QtWidgets/QToolBar /usr/include/qt/QtWidgets/qtoolbar.h \
+ /usr/include/qt/QtWidgets/QWidget /usr/include/qt/QtWidgets/qwidget.h \
+ /usr/include/qt/QtCore/QDebug /usr/include/qt/QtCore/qdebug.h \
+ /usr/include/qt/QtCore/qtextstream.h \
  /usr/include/qt/QtCore/qcontiguouscache.h \
  /usr/include/qt/QtCore/QProcess /usr/include/qt/QtCore/qprocess.h \
  /usr/include/qt/QtGui/QStandardItemModel \
@@ -294,4 +297,6 @@ CMakeFiles/usbip_gui.dir/mainwindow.cpp.o: \
  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
  /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
  /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
- /usr/include/linux/close_range.h
+ /usr/include/linux/close_range.h \
+ /home/madone/Dokumente/coding/usbip_gui/usbip_gui/servermanager.h \
+ /usr/include/qt/QtWidgets/QDialog /usr/include/qt/QtWidgets/qdialog.h

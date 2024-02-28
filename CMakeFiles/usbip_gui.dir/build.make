@@ -118,71 +118,26 @@ CMakeFiles/usbip_gui.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/usbip_gui.dir/mainwindow.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madone/Dokumente/coding/usbip_gui/usbip_gui/mainwindow.cpp -o CMakeFiles/usbip_gui.dir/mainwindow.cpp.s
 
-CMakeFiles/usbip_gui.dir/parseremote.cpp.o: CMakeFiles/usbip_gui.dir/flags.make
-CMakeFiles/usbip_gui.dir/parseremote.cpp.o: parseremote.cpp
-CMakeFiles/usbip_gui.dir/parseremote.cpp.o: CMakeFiles/usbip_gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/madone/Dokumente/coding/usbip_gui/usbip_gui/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/usbip_gui.dir/parseremote.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usbip_gui.dir/parseremote.cpp.o -MF CMakeFiles/usbip_gui.dir/parseremote.cpp.o.d -o CMakeFiles/usbip_gui.dir/parseremote.cpp.o -c /home/madone/Dokumente/coding/usbip_gui/usbip_gui/parseremote.cpp
+CMakeFiles/usbip_gui.dir/servermanager.cpp.o: CMakeFiles/usbip_gui.dir/flags.make
+CMakeFiles/usbip_gui.dir/servermanager.cpp.o: servermanager.cpp
+CMakeFiles/usbip_gui.dir/servermanager.cpp.o: CMakeFiles/usbip_gui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/madone/Dokumente/coding/usbip_gui/usbip_gui/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/usbip_gui.dir/servermanager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usbip_gui.dir/servermanager.cpp.o -MF CMakeFiles/usbip_gui.dir/servermanager.cpp.o.d -o CMakeFiles/usbip_gui.dir/servermanager.cpp.o -c /home/madone/Dokumente/coding/usbip_gui/usbip_gui/servermanager.cpp
 
-CMakeFiles/usbip_gui.dir/parseremote.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/usbip_gui.dir/parseremote.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/madone/Dokumente/coding/usbip_gui/usbip_gui/parseremote.cpp > CMakeFiles/usbip_gui.dir/parseremote.cpp.i
+CMakeFiles/usbip_gui.dir/servermanager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/usbip_gui.dir/servermanager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/madone/Dokumente/coding/usbip_gui/usbip_gui/servermanager.cpp > CMakeFiles/usbip_gui.dir/servermanager.cpp.i
 
-CMakeFiles/usbip_gui.dir/parseremote.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/usbip_gui.dir/parseremote.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madone/Dokumente/coding/usbip_gui/usbip_gui/parseremote.cpp -o CMakeFiles/usbip_gui.dir/parseremote.cpp.s
-
-CMakeFiles/usbip_gui.dir/usbdevice.cpp.o: CMakeFiles/usbip_gui.dir/flags.make
-CMakeFiles/usbip_gui.dir/usbdevice.cpp.o: usbdevice.cpp
-CMakeFiles/usbip_gui.dir/usbdevice.cpp.o: CMakeFiles/usbip_gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/madone/Dokumente/coding/usbip_gui/usbip_gui/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/usbip_gui.dir/usbdevice.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usbip_gui.dir/usbdevice.cpp.o -MF CMakeFiles/usbip_gui.dir/usbdevice.cpp.o.d -o CMakeFiles/usbip_gui.dir/usbdevice.cpp.o -c /home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbdevice.cpp
-
-CMakeFiles/usbip_gui.dir/usbdevice.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/usbip_gui.dir/usbdevice.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbdevice.cpp > CMakeFiles/usbip_gui.dir/usbdevice.cpp.i
-
-CMakeFiles/usbip_gui.dir/usbdevice.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/usbip_gui.dir/usbdevice.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbdevice.cpp -o CMakeFiles/usbip_gui.dir/usbdevice.cpp.s
-
-CMakeFiles/usbip_gui.dir/usbdevicelocal.cpp.o: CMakeFiles/usbip_gui.dir/flags.make
-CMakeFiles/usbip_gui.dir/usbdevicelocal.cpp.o: usbdevicelocal.cpp
-CMakeFiles/usbip_gui.dir/usbdevicelocal.cpp.o: CMakeFiles/usbip_gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/madone/Dokumente/coding/usbip_gui/usbip_gui/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/usbip_gui.dir/usbdevicelocal.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usbip_gui.dir/usbdevicelocal.cpp.o -MF CMakeFiles/usbip_gui.dir/usbdevicelocal.cpp.o.d -o CMakeFiles/usbip_gui.dir/usbdevicelocal.cpp.o -c /home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbdevicelocal.cpp
-
-CMakeFiles/usbip_gui.dir/usbdevicelocal.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/usbip_gui.dir/usbdevicelocal.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbdevicelocal.cpp > CMakeFiles/usbip_gui.dir/usbdevicelocal.cpp.i
-
-CMakeFiles/usbip_gui.dir/usbdevicelocal.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/usbip_gui.dir/usbdevicelocal.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbdevicelocal.cpp -o CMakeFiles/usbip_gui.dir/usbdevicelocal.cpp.s
-
-CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.o: CMakeFiles/usbip_gui.dir/flags.make
-CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.o: usbdeviceremote.cpp
-CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.o: CMakeFiles/usbip_gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/madone/Dokumente/coding/usbip_gui/usbip_gui/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.o -MF CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.o.d -o CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.o -c /home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbdeviceremote.cpp
-
-CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbdeviceremote.cpp > CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.i
-
-CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbdeviceremote.cpp -o CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.s
+CMakeFiles/usbip_gui.dir/servermanager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/usbip_gui.dir/servermanager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madone/Dokumente/coding/usbip_gui/usbip_gui/servermanager.cpp -o CMakeFiles/usbip_gui.dir/servermanager.cpp.s
 
 # Object files for target usbip_gui
 usbip_gui_OBJECTS = \
 "CMakeFiles/usbip_gui.dir/usbip_gui_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/usbip_gui.dir/main.cpp.o" \
 "CMakeFiles/usbip_gui.dir/mainwindow.cpp.o" \
-"CMakeFiles/usbip_gui.dir/parseremote.cpp.o" \
-"CMakeFiles/usbip_gui.dir/usbdevice.cpp.o" \
-"CMakeFiles/usbip_gui.dir/usbdevicelocal.cpp.o" \
-"CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.o"
+"CMakeFiles/usbip_gui.dir/servermanager.cpp.o"
 
 # External object files for target usbip_gui
 usbip_gui_EXTERNAL_OBJECTS =
@@ -190,16 +145,13 @@ usbip_gui_EXTERNAL_OBJECTS =
 usbip_gui: CMakeFiles/usbip_gui.dir/usbip_gui_autogen/mocs_compilation.cpp.o
 usbip_gui: CMakeFiles/usbip_gui.dir/main.cpp.o
 usbip_gui: CMakeFiles/usbip_gui.dir/mainwindow.cpp.o
-usbip_gui: CMakeFiles/usbip_gui.dir/parseremote.cpp.o
-usbip_gui: CMakeFiles/usbip_gui.dir/usbdevice.cpp.o
-usbip_gui: CMakeFiles/usbip_gui.dir/usbdevicelocal.cpp.o
-usbip_gui: CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.o
+usbip_gui: CMakeFiles/usbip_gui.dir/servermanager.cpp.o
 usbip_gui: CMakeFiles/usbip_gui.dir/build.make
 usbip_gui: /usr/lib/libQt5Widgets.so.5.15.12
 usbip_gui: /usr/lib/libQt5Gui.so.5.15.12
 usbip_gui: /usr/lib/libQt5Core.so.5.15.12
 usbip_gui: CMakeFiles/usbip_gui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/madone/Dokumente/coding/usbip_gui/usbip_gui/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable usbip_gui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/madone/Dokumente/coding/usbip_gui/usbip_gui/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable usbip_gui"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/usbip_gui.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

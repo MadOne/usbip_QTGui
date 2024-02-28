@@ -5,14 +5,8 @@ usbip_gui_autogen/timestamp: \
 	/home/madone/Dokumente/coding/usbip_gui/usbip_gui/main.cpp \
 	/home/madone/Dokumente/coding/usbip_gui/usbip_gui/mainwindow.cpp \
 	/home/madone/Dokumente/coding/usbip_gui/usbip_gui/mainwindow.h \
-	/home/madone/Dokumente/coding/usbip_gui/usbip_gui/parseremote.cpp \
-	/home/madone/Dokumente/coding/usbip_gui/usbip_gui/parseremote.h \
-	/home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbdevice.cpp \
-	/home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbdevice.h \
-	/home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbdevicelocal.cpp \
-	/home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbdevicelocal.h \
-	/home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbdeviceremote.cpp \
-	/home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbdeviceremote.h \
+	/home/madone/Dokumente/coding/usbip_gui/usbip_gui/servermanager.cpp \
+	/home/madone/Dokumente/coding/usbip_gui/usbip_gui/servermanager.h \
 	/home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbip_gui_autogen/moc_predefs.h \
 	/usr/include/asm-generic/errno-base.h \
 	/usr/include/asm-generic/errno.h \
@@ -321,7 +315,9 @@ usbip_gui_autogen/timestamp: \
 	/usr/include/qt/QtGui/qtguiglobal.h \
 	/usr/include/qt/QtGui/qtransform.h \
 	/usr/include/qt/QtGui/qwindowdefs.h \
+	/usr/include/qt/QtWidgets/QDialog \
 	/usr/include/qt/QtWidgets/QMainWindow \
+	/usr/include/qt/QtWidgets/qdialog.h \
 	/usr/include/qt/QtWidgets/qmainwindow.h \
 	/usr/include/qt/QtWidgets/qsizepolicy.h \
 	/usr/include/qt/QtWidgets/qtabwidget.h \
@@ -418,4 +414,5 @@ usbip_gui_autogen/timestamp: \
 	/usr/share/cmake/Modules/Platform/Linux.cmake \
 	/usr/share/cmake/Modules/Platform/UnixPaths.cmake \
 	/home/madone/Dokumente/coding/usbip_gui/usbip_gui/mainwindow.ui \
+	/home/madone/Dokumente/coding/usbip_gui/usbip_gui/servermanager.ui \
 	/usr/bin/cmake

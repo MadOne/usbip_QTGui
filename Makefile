@@ -248,101 +248,29 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
-parseremote.o: parseremote.cpp.o
-.PHONY : parseremote.o
+servermanager.o: servermanager.cpp.o
+.PHONY : servermanager.o
 
 # target to build an object file
-parseremote.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/parseremote.cpp.o
-.PHONY : parseremote.cpp.o
+servermanager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/servermanager.cpp.o
+.PHONY : servermanager.cpp.o
 
-parseremote.i: parseremote.cpp.i
-.PHONY : parseremote.i
-
-# target to preprocess a source file
-parseremote.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/parseremote.cpp.i
-.PHONY : parseremote.cpp.i
-
-parseremote.s: parseremote.cpp.s
-.PHONY : parseremote.s
-
-# target to generate assembly for a file
-parseremote.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/parseremote.cpp.s
-.PHONY : parseremote.cpp.s
-
-usbdevice.o: usbdevice.cpp.o
-.PHONY : usbdevice.o
-
-# target to build an object file
-usbdevice.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/usbdevice.cpp.o
-.PHONY : usbdevice.cpp.o
-
-usbdevice.i: usbdevice.cpp.i
-.PHONY : usbdevice.i
+servermanager.i: servermanager.cpp.i
+.PHONY : servermanager.i
 
 # target to preprocess a source file
-usbdevice.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/usbdevice.cpp.i
-.PHONY : usbdevice.cpp.i
+servermanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/servermanager.cpp.i
+.PHONY : servermanager.cpp.i
 
-usbdevice.s: usbdevice.cpp.s
-.PHONY : usbdevice.s
-
-# target to generate assembly for a file
-usbdevice.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/usbdevice.cpp.s
-.PHONY : usbdevice.cpp.s
-
-usbdevicelocal.o: usbdevicelocal.cpp.o
-.PHONY : usbdevicelocal.o
-
-# target to build an object file
-usbdevicelocal.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/usbdevicelocal.cpp.o
-.PHONY : usbdevicelocal.cpp.o
-
-usbdevicelocal.i: usbdevicelocal.cpp.i
-.PHONY : usbdevicelocal.i
-
-# target to preprocess a source file
-usbdevicelocal.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/usbdevicelocal.cpp.i
-.PHONY : usbdevicelocal.cpp.i
-
-usbdevicelocal.s: usbdevicelocal.cpp.s
-.PHONY : usbdevicelocal.s
+servermanager.s: servermanager.cpp.s
+.PHONY : servermanager.s
 
 # target to generate assembly for a file
-usbdevicelocal.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/usbdevicelocal.cpp.s
-.PHONY : usbdevicelocal.cpp.s
-
-usbdeviceremote.o: usbdeviceremote.cpp.o
-.PHONY : usbdeviceremote.o
-
-# target to build an object file
-usbdeviceremote.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.o
-.PHONY : usbdeviceremote.cpp.o
-
-usbdeviceremote.i: usbdeviceremote.cpp.i
-.PHONY : usbdeviceremote.i
-
-# target to preprocess a source file
-usbdeviceremote.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.i
-.PHONY : usbdeviceremote.cpp.i
-
-usbdeviceremote.s: usbdeviceremote.cpp.s
-.PHONY : usbdeviceremote.s
-
-# target to generate assembly for a file
-usbdeviceremote.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/usbdeviceremote.cpp.s
-.PHONY : usbdeviceremote.cpp.s
+servermanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/servermanager.cpp.s
+.PHONY : servermanager.cpp.s
 
 usbip_gui_autogen/mocs_compilation.o: usbip_gui_autogen/mocs_compilation.cpp.o
 .PHONY : usbip_gui_autogen/mocs_compilation.o
@@ -389,18 +317,9 @@ help:
 	@echo "... mainwindow.o"
 	@echo "... mainwindow.i"
 	@echo "... mainwindow.s"
-	@echo "... parseremote.o"
-	@echo "... parseremote.i"
-	@echo "... parseremote.s"
-	@echo "... usbdevice.o"
-	@echo "... usbdevice.i"
-	@echo "... usbdevice.s"
-	@echo "... usbdevicelocal.o"
-	@echo "... usbdevicelocal.i"
-	@echo "... usbdevicelocal.s"
-	@echo "... usbdeviceremote.o"
-	@echo "... usbdeviceremote.i"
-	@echo "... usbdeviceremote.s"
+	@echo "... servermanager.o"
+	@echo "... servermanager.i"
+	@echo "... servermanager.s"
 	@echo "... usbip_gui_autogen/mocs_compilation.o"
 	@echo "... usbip_gui_autogen/mocs_compilation.i"
 	@echo "... usbip_gui_autogen/mocs_compilation.s"

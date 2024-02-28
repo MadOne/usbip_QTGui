@@ -5,6 +5,7 @@
 #include "QStandardItemModel"
 #include <string>
 #include <unistd.h>
+#include "servermanager.h"
 
 using namespace std;
 
@@ -185,7 +186,11 @@ void MainWindow::btnRemoteRefresh()
     bool finished = process.waitForFinished(500);
     QString stdout = process.readAllStandardOutput();
     QString stderr = process.readAllStandardError();
-
+    if (!finished)
+    {
+        qDebug() << "Timeout!";
+        return;
+    }
     if (stdout != "")
     {
         qDebug() << stdout;
@@ -343,3 +348,10 @@ void MainWindow::btnAttachedDetach()
         btnRemoteRefresh();
     }
 }
+
+void MainWindow::on_actionServer_Manager_triggered()
+{
+    serverManager *newSM = new serverManager();
+    newSM->show();
+}
+

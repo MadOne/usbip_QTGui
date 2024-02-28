@@ -66,8 +66,8 @@ include CMakeFiles/usbip_gui_autogen_timestamp_deps.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/usbip_gui_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/usbip_gui_autogen_timestamp_deps: /usr/lib/libQt5Widgets.so.5.15.12
 CMakeFiles/usbip_gui_autogen_timestamp_deps: /usr/bin/uic
+CMakeFiles/usbip_gui_autogen_timestamp_deps: /usr/lib/libQt5Widgets.so.5.15.12
 CMakeFiles/usbip_gui_autogen_timestamp_deps: /usr/bin/moc
 
 usbip_gui_autogen_timestamp_deps: CMakeFiles/usbip_gui_autogen_timestamp_deps

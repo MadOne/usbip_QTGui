@@ -241,4 +241,7 @@ CMakeFiles/usbip_gui.dir/usbip_gui_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt/QtGui/qfontinfo.h \
  /usr/include/qt/QtWidgets/qsizepolicy.h /usr/include/qt/QtGui/qcursor.h \
  /usr/include/qt/QtGui/qkeysequence.h \
- /usr/include/qt/QtWidgets/qtabwidget.h /usr/include/qt/QtGui/qicon.h
+ /usr/include/qt/QtWidgets/qtabwidget.h /usr/include/qt/QtGui/qicon.h \
+ /home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbip_gui_autogen/EWIEGA46WW/moc_servermanager.cpp \
+ /home/madone/Dokumente/coding/usbip_gui/usbip_gui/usbip_gui_autogen/EWIEGA46WW/../../servermanager.h \
+ /usr/include/qt/QtWidgets/QDialog /usr/include/qt/QtWidgets/qdialog.h
