@@ -1,9 +1,0 @@
-/home/madone/Dokumente/coding/usbip_gui/usbip_gui/CMakeFiles/usbip_gui.dir
-/home/madone/Dokumente/coding/usbip_gui/usbip_gui/CMakeFiles/edit_cache.dir
-/home/madone/Dokumente/coding/usbip_gui/usbip_gui/CMakeFiles/rebuild_cache.dir
-/home/madone/Dokumente/coding/usbip_gui/usbip_gui/CMakeFiles/list_install_components.dir
-/home/madone/Dokumente/coding/usbip_gui/usbip_gui/CMakeFiles/install.dir
-/home/madone/Dokumente/coding/usbip_gui/usbip_gui/CMakeFiles/install/local.dir
-/home/madone/Dokumente/coding/usbip_gui/usbip_gui/CMakeFiles/install/strip.dir
-/home/madone/Dokumente/coding/usbip_gui/usbip_gui/CMakeFiles/usbip_gui_autogen_timestamp_deps.dir
-/home/madone/Dokumente/coding/usbip_gui/usbip_gui/CMakeFiles/usbip_gui_autogen.dir
