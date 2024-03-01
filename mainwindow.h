@@ -34,5 +34,6 @@ private slots:
     void populateRemote(QStringList deviceList);
     void populateAttached(QStringList deviceList);
     void on_actionServer_Manager_triggered();
+    void setIp(QString ip);
 };
 #endif // MAINWINDOW_H

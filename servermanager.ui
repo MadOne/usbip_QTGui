@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>505</width>
-    <height>548</height>
+    <width>475</width>
+    <height>539</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,6 +22,12 @@
      <height>441</height>
     </rect>
    </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
    <column>
     <property name="text">
      <string>Name</string>
@@ -62,7 +68,7 @@
   <widget class="QPushButton" name="btnCancel">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>70</x>
      <y>490</y>
      <width>87</width>
      <height>26</height>
@@ -100,5 +106,38 @@
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>btnCancel</sender>
+   <signal>clicked()</signal>
+   <receiver>serverManager</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>127</x>
+     <y>501</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>67</x>
+     <y>538</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnOk</sender>
+   <signal>clicked()</signal>
+   <receiver>serverManager</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>239</x>
+     <y>503</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>373</x>
+     <y>538</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

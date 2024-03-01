@@ -352,6 +352,16 @@ void MainWindow::btnAttachedDetach()
 void MainWindow::on_actionServer_Manager_triggered()
 {
     serverManager *newSM = new serverManager();
-    newSM->show();
+
+    if (newSM->exec())
+    {
+        bool Opt1, Opt2, Opt3;
+        QString Ip = newSM->getIp();
+        setIp(Ip);
+    }
 }
 
+void MainWindow::setIp(QString ip)
+{
+    ui->leIp->setText(ip);
+}

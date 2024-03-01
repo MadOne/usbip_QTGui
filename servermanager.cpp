@@ -51,8 +51,6 @@ void serverManager::saveSettings()
     settings.endArray();
 }
 
-
-
 void serverManager::loadSettings()
 {
     qDebug() << "loading settings";
@@ -71,7 +69,7 @@ void serverManager::loadSettings()
 
 void serverManager::on_btnOk_clicked()
 {
-    //ui->leIp->setText(ui->twServer->item(ui->twServer->currentRow(), 1)->text());
+    // w->setIp("10.10.1.177");
 }
 
 void serverManager::on_btnCancel_clicked()
@@ -81,4 +79,9 @@ void serverManager::on_btnCancel_clicked()
 void serverManager::on_btnSave_clicked()
 {
     saveSettings();
+}
+
+QString serverManager::getIp()
+{
+    return ui->twServer->item(ui->twServer->currentRow(), 1)->text();
 }
