@@ -35,5 +35,6 @@ private slots:
     void populateAttached(QStringList deviceList);
     void on_actionServer_Manager_triggered();
     void setIp(QString ip);
+    void loadModules();
 };
 #endif // MAINWINDOW_H

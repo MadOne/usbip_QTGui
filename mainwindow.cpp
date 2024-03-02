@@ -214,9 +214,9 @@ void MainWindow::btnRemoteAttach()
         busid = ui->tvRemote->item(ui->tvRemote->currentRow(), 0)->text();
         busid = busid.trimmed();
     }
-    process.start("usbip", QStringList() << "attach"
-                                         << "-r" << ip << "-b" << busid);
-    bool finished = process.waitForFinished(500);
+    QStringList params = {"usbip", "attach", "-r", ip, "-b", busid};
+    process.start("pkexec", params);
+    bool finished = process.waitForFinished(10000);
     if (!finished)
     {
         return;
@@ -241,8 +241,8 @@ void MainWindow::btnLocalRefresh()
 {
 
     QProcess process;
-    process.start("usbip", QStringList() << "list"
-                                         << "-l");
+    QStringList params = {"list", "-l"};
+    process.start("usbip", params);
     process.waitForFinished(500);
     QString stdout = process.readAllStandardOutput();
     QString stderr = process.readAllStandardError();
@@ -261,9 +261,9 @@ void MainWindow::btnLocalBind()
         busid = ui->tvLocal->item(ui->tvLocal->currentRow(), 0)->text();
     }
     QProcess process;
-    process.start("usbip", QStringList() << "bind"
-                                         << "-b" << busid);
-    process.waitForFinished(500);
+    QStringList params = {"usbip", "bind", "-b", busid};
+    process.start("pkexec", params);
+    process.waitForFinished(10000);
     QString stdout = process.readAllStandardOutput();
     QString stderr = process.readAllStandardError();
     if (stdout != "")
@@ -285,9 +285,9 @@ void MainWindow::btnLocalUnbind()
         busid = ui->tvLocal->item(ui->tvLocal->currentRow(), 0)->text();
     }
     QProcess process;
-    QStringList params = {"unbind", "-b", busid};
-    process.start("usbip", params);
-    process.waitForFinished(500);
+    QStringList params = {"usbip", "unbind", "-b", busid};
+    process.start("pkexec", params);
+    process.waitForFinished(10000);
     QString stdout = process.readAllStandardOutput();
     QString stderr = process.readAllStandardError();
     if (stdout != "")
@@ -304,7 +304,8 @@ void MainWindow::btnLocalUnbind()
 void MainWindow::btnAttachedRefresh()
 {
     QProcess process;
-    process.start("usbip", QStringList() << "port");
+    QStringList params = {"port"};
+    process.start("usbip", params);
     process.waitForFinished(500);
     QString stdout = process.readAllStandardOutput();
     QString stderr = process.readAllStandardError();
@@ -330,9 +331,9 @@ void MainWindow::btnAttachedDetach()
 
         port = ui->tvAttached->item(ui->tvAttached->currentRow(), 1)->text();
         QProcess process;
-        process.start("usbip", QStringList() << "detach"
-                                             << "-p" << port);
-        process.waitForFinished(500);
+        QStringList params = {"usbip", "detach", "-p", port};
+        process.start("pkexec", params);
+        process.waitForFinished(10000);
         QString stdout = process.readAllStandardOutput();
         QString stderr = process.readAllStandardError();
         if (stdout != "")
@@ -352,10 +353,8 @@ void MainWindow::btnAttachedDetach()
 void MainWindow::on_actionServer_Manager_triggered()
 {
     serverManager *newSM = new serverManager();
-
     if (newSM->exec())
     {
-        bool Opt1, Opt2, Opt3;
         QString Ip = newSM->getIp();
         setIp(Ip);
     }
@@ -364,4 +363,23 @@ void MainWindow::on_actionServer_Manager_triggered()
 void MainWindow::setIp(QString ip)
 {
     ui->leIp->setText(ip);
+}
+
+void MainWindow::loadModules()
+{
+    QProcess process;
+    QStringList params = {"modprobe", "usbip_host", "usbip_core", "vhci_hcd"};
+    process.start("pkexec", params);
+    process.waitForFinished(10000);
+    QString stdout = process.readAllStandardOutput();
+    QString stderr = process.readAllStandardError();
+    if (stdout != "")
+    {
+        qDebug() << stdout;
+    }
+
+    if (stderr != "")
+    {
+        qDebug() << stderr;
+    }
 }
