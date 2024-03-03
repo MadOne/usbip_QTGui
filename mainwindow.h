@@ -35,8 +35,7 @@ private slots:
     void populateAttached(QStringList deviceList);
     void on_actionServer_Manager_triggered();
     void setIp(QString ip);
-    void loadModules(QStringList missingModules);
+
     void checkModules();
-    QStringList parseModules(QString lsmod);
 };
 #endif // MAINWINDOW_H
