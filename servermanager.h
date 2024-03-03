@@ -1,7 +1,7 @@
 #ifndef SERVERMANAGER_H
 #define SERVERMANAGER_H
 
-#include <QDialog>
+#include "QDialog"
 
 namespace Ui
 {

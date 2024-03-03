@@ -43,6 +43,12 @@ else()
 
 
             servermanager.h servermanager.cpp servermanager.ui
+            parser.cpp
+            parser.h
+            systemCommands.cpp
+            systemCommands.h
+
+
 
         )
     endif()

@@ -248,6 +248,30 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+parser.o: parser.cpp.o
+.PHONY : parser.o
+
+# target to build an object file
+parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/parser.cpp.o
+.PHONY : parser.cpp.o
+
+parser.i: parser.cpp.i
+.PHONY : parser.i
+
+# target to preprocess a source file
+parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/parser.cpp.i
+.PHONY : parser.cpp.i
+
+parser.s: parser.cpp.s
+.PHONY : parser.s
+
+# target to generate assembly for a file
+parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/parser.cpp.s
+.PHONY : parser.cpp.s
+
 servermanager.o: servermanager.cpp.o
 .PHONY : servermanager.o
 
@@ -271,6 +295,30 @@ servermanager.s: servermanager.cpp.s
 servermanager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/servermanager.cpp.s
 .PHONY : servermanager.cpp.s
+
+systemCommands.o: systemCommands.cpp.o
+.PHONY : systemCommands.o
+
+# target to build an object file
+systemCommands.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/systemCommands.cpp.o
+.PHONY : systemCommands.cpp.o
+
+systemCommands.i: systemCommands.cpp.i
+.PHONY : systemCommands.i
+
+# target to preprocess a source file
+systemCommands.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/systemCommands.cpp.i
+.PHONY : systemCommands.cpp.i
+
+systemCommands.s: systemCommands.cpp.s
+.PHONY : systemCommands.s
+
+# target to generate assembly for a file
+systemCommands.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/systemCommands.cpp.s
+.PHONY : systemCommands.cpp.s
 
 usbip_gui_autogen/mocs_compilation.o: usbip_gui_autogen/mocs_compilation.cpp.o
 .PHONY : usbip_gui_autogen/mocs_compilation.o
@@ -317,9 +365,15 @@ help:
 	@echo "... mainwindow.o"
 	@echo "... mainwindow.i"
 	@echo "... mainwindow.s"
+	@echo "... parser.o"
+	@echo "... parser.i"
+	@echo "... parser.s"
 	@echo "... servermanager.o"
 	@echo "... servermanager.i"
 	@echo "... servermanager.s"
+	@echo "... systemCommands.o"
+	@echo "... systemCommands.i"
+	@echo "... systemCommands.s"
 	@echo "... usbip_gui_autogen/mocs_compilation.o"
 	@echo "... usbip_gui_autogen/mocs_compilation.i"
 	@echo "... usbip_gui_autogen/mocs_compilation.s"
