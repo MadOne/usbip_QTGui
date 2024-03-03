@@ -12,6 +12,8 @@ using namespace std;
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
 {
+    // loadModules();
+    checkModules();
     ui->setupUi(this);
 }
 
@@ -365,10 +367,15 @@ void MainWindow::setIp(QString ip)
     ui->leIp->setText(ip);
 }
 
-void MainWindow::loadModules()
+void MainWindow::loadModules(QStringList missingModules)
 {
     QProcess process;
-    QStringList params = {"modprobe", "usbip_host", "usbip_core", "vhci_hcd"};
+    if (missingModules.length() == 0)
+    {
+        return;
+    }
+    QStringList params = missingModules;
+    params.prepend("modprobe");
     process.start("pkexec", params);
     process.waitForFinished(10000);
     QString stdout = process.readAllStandardOutput();
@@ -382,4 +389,33 @@ void MainWindow::loadModules()
     {
         qDebug() << stderr;
     }
+}
+
+void MainWindow::checkModules()
+{
+    QProcess process;
+    QStringList params = {};
+    process.start("lsmod", params);
+    process.waitForFinished(10000);
+    QString lsmod = process.readAllStandardOutput();
+    qDebug() << lsmod;
+    QStringList missingModules = parseModules(lsmod);
+    qDebug() << missingModules;
+    loadModules(missingModules);
+    // qDebug() << missingModules;
+}
+
+QStringList MainWindow::parseModules(QString lsmod)
+{
+    QStringList lines = lsmod.split("\n");
+    QStringList missingModules = {"usbip_host", "usbip_core", "vhci_hcd"};
+    for (const auto &line : lines)
+    {
+        QStringList items = line.split(" ");
+        if (items[0] == "usbip_host" || items[0] == "usbip_core" || items[0] == "vhci_hcd")
+        {
+            missingModules.removeAll(items[0]);
+        }
+    }
+    return missingModules;
 }
