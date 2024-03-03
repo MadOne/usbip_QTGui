@@ -29,11 +29,4 @@ Feel free to contribute to this project. But be prepared for me to ask ~~dumb~~ 
 
 ## ToDo
 
-- ~~Pick license~~
-- Multiple IPs as remote
-- Polkit integration
-- Check if kernel modules ar loaded
-- Loading kernel modules on start
-- Assist in autoloading kernel module
-- Create polkit file for usbip
-- Lots of errorhandling
+see github issues
