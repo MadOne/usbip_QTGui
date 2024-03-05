@@ -1,13 +1,14 @@
 #include "mainwindow.h"
-#include "parser.h"
 #include "./ui_mainwindow.h"
 #include "QDebug"
 #include "QProcess"
 #include "QStandardItemModel"
+#include "QMessageBox"
 #include <string>
 #include <unistd.h>
 #include "servermanager.h"
 #include "systemCommands.h"
+#include "parser.h"
 
 using namespace std;
 
@@ -158,5 +159,21 @@ void MainWindow::checkModules()
 {
     QString lsmod = lsmodTxt();
     QStringList missingModules = parseModules(lsmod);
-    modulesLoad(missingModules);
+    if (missingModules.length() > 0)
+    {
+        QMessageBox messageBox;
+        messageBox.setText("Do you want to load the following modules:\n" + missingModules.join("\n"));
+        messageBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
+        messageBox.setDefaultButton(QMessageBox::No);
+        int ret = messageBox.exec();
+
+        if (ret == QMessageBox::Yes)
+        {
+            modulesLoad(missingModules);
+        }
+        else
+        {
+            qDebug() << "No modules loaded";
+        }
+    }
 }
