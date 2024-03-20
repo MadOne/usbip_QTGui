@@ -200,6 +200,30 @@ usbip_gui_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui_autogen.dir/build.make CMakeFiles/usbip_gui_autogen.dir/build
 .PHONY : usbip_gui_autogen/fast
 
+device.o: device.cpp.o
+.PHONY : device.o
+
+# target to build an object file
+device.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/device.cpp.o
+.PHONY : device.cpp.o
+
+device.i: device.cpp.i
+.PHONY : device.i
+
+# target to preprocess a source file
+device.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/device.cpp.i
+.PHONY : device.cpp.i
+
+device.s: device.cpp.s
+.PHONY : device.s
+
+# target to generate assembly for a file
+device.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usbip_gui.dir/build.make CMakeFiles/usbip_gui.dir/device.cpp.s
+.PHONY : device.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -359,6 +383,9 @@ help:
 	@echo "... usbip_gui_autogen"
 	@echo "... usbip_gui_autogen_timestamp_deps"
 	@echo "... usbip_gui"
+	@echo "... device.o"
+	@echo "... device.i"
+	@echo "... device.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

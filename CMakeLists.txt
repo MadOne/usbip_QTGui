@@ -47,6 +47,7 @@ else()
             parser.h
             systemCommands.cpp
             systemCommands.h
+            device.h device.cpp
 
 
 

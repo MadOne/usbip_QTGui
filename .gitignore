@@ -1,8 +1,13 @@
 build/
 /CMakeFiles/
 /usbip_gui_autogen/
-
-/CMakeCache.txt
 /CMakeCache.txt
 /usbip_gui
 
+
+### VisualStudioCode ###
+.vscode/*      # Maybe .vscode/**/* instead - see comments
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
